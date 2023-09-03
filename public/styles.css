@@ -4,20 +4,23 @@ body {
 	justify-content: space-around;
 	align-items: center;
 }
-
+h1 {
+	text-align: center;
+}
+#header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100vw;
+	margin: 2rem;
+}
 #selectorBttns {
 	display: flex;
 	flex-direction: column;
 	height: 80%;
 	justify-content: space-around;
 }
-#navBar {
-	display: flex;
-	align-items: space-around;
-	align-self: center;
-	height: 300px;
-	width: 100px;
-}
+
 #radioBttns {
 	display: flex;
 	flex-direction: row;
@@ -25,14 +28,25 @@ body {
 #sketchPad {
 	display: flex;
 	flex-direction: column;
-	height: 400px;
-	width: 400px;
-	border: 2px solid black;
+	box-shadow: 0px 0px 51px 8px rgba(0, 0, 0, 0.1);
+	height: 33rem;
+	width: 33rem;
+	border-radius: 1rem;
+	margin: 2rem;
 }
 #mainContainer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	width: 100vw;
-	margin-right: 400px;
+	align-items: center;
+	margin-right: 20rem;
+}
+#navBar {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 0px 51px 8px rgba(0, 0, 0, 0.1);
+	height: 20rem;
+	width: 15rem;
+	border-radius: 1rem;
+	margin: 2rem;
 }
