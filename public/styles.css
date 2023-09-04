@@ -3,9 +3,17 @@ body {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
+	height: auto;
+	margin: 10rem;
 }
-h1 {
-	text-align: center;
+h3 {
+	font-family: 'Mr Dafoe';
+	margin: 0;
+	font-size: 2em;
+	margin-top: 1rem;
+	color: white;
+	text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
+	transform: rotate(-7deg);
 }
 #header {
 	display: flex;
@@ -17,13 +25,16 @@ h1 {
 #selectorBttns {
 	display: flex;
 	flex-direction: column;
-	height: 80%;
+	height: 95%;
 	justify-content: space-around;
+	align-items: center;
 }
-
-#radioBttns {
-	display: flex;
-	flex-direction: row;
+.bttns {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: large;
+	box-shadow: 0px 0px 51px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 1rem;
+	width: 70%;
 }
 #sketchPad {
 	display: flex;
@@ -39,14 +50,149 @@ h1 {
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-items: center;
-	margin-right: 20rem;
+	margin-right: 18rem;
+}
+nav {
+	height: 45%;
 }
 #navBar {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
 	box-shadow: 0px 0px 51px 8px rgba(0, 0, 0, 0.1);
 	height: 20rem;
 	width: 15rem;
 	border-radius: 1rem;
 	margin: 2rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: radial-gradient(rgba(#7600bf, 0.5) 0%, transparent 70%),
+		linear-gradient(#0b161e 40%, #202076 70%);
+	perspective: 700px;
+	font-size: clamp(10px, 2vw, 20px);
+}
+
+h1 {
+	position: relative;
+	font-family: 'Exo';
+	font-size: 9em;
+	margin: 0;
+	transform: skew(-15deg);
+	letter-spacing: 0.03em;
+}
+&::after {
+	content: '';
+	position: absolute;
+	top: -0.1em;
+	right: 0.05em;
+	width: 0.4em;
+	height: 0.4em;
+	background: radial-gradient(
+			white 3%,
+			rgba(white, 0.3) 15%,
+			rgba(white, 0.05) 60%,
+			transparent 80%
+		),
+		radial-gradient(rgba(white, 0.2) 50%, transparent 60%) 50% 50% / 5% 100%,
+		radial-gradient(rgba(white, 0.2) 50%, transparent 60%) 50% 50% / 70% 5%;
+	background-repeat: no-repeat;
+}
+
+span:first-child {
+	display: block;
+	text-shadow: 0 0 0.1em #8ba2d0, 0 0 0.2em black, 0 0 5em #165ff3;
+	-webkit-text-stroke: 0.06em rgba(black, 0.5);
+}
+
+span:last-child {
+	position: absolute;
+	margin-bottom: 10rem;
+	left: 0;
+	top: 0;
+	background-image: linear-gradient(
+		#032d50 25%,
+		#00a1ef 35%,
+		white 50%,
+		#20125f 50%,
+		#8313e7 55%,
+		#ff61af 75%
+	);
+	-webkit-text-stroke: 0.01em #94a0b9;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+h2 {
+	font-family: 'Mr Dafoe';
+	margin: 0;
+	font-size: 5.5em;
+	margin-top: -0.6em;
+	color: white;
+	text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
+	transform: rotate(-7deg);
+}
+
+.grid {
+	main: #7d41e6;
+	glow: rgba(#2e26ff, 0.4);
+	background: linear-gradient(transparent 65%, transparent 95%),
+		linear-gradient(90deg, transparent 65%, transparent 95%);
+	background-size: 30px 30px;
+	width: 200vw;
+	height: 300vh;
+	position: absolute;
+	bottom: -120vh;
+	transform: rotateX(-100deg);
+	-webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 80%);
+}
+
+/* slider control */
+
+.slidecontainer {
+	width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+	-webkit-appearance: none; /* Override default CSS styles */
+	appearance: none;
+	width: 100%; /* Full-width */
+	height: 5px; /* Specified height */
+	background: #d3d3d3; /* Grey background */
+	outline: none; /* Remove outline */
+	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+	-webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+	transition: opacity 0.2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+	opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none; /* Override default look */
+	appearance: none;
+	border-radius: 2rem;
+	width: 10px; /* Set a specific slider handle width */
+	height: 10px; /* Slider handle height */
+	background: #000000; /* Green background */
+	cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+	width: 25px; /* Set a specific slider handle width */
+	height: 25px; /* Slider handle height */
+	background: #04aa6d; /* Green background */
+	cursor: pointer; /* Cursor on hover */
 }

@@ -9,29 +9,32 @@
 		<script src="./index.js" defer></script>
 	</head>
 	<body>
-		<div id="header">
-			<h1>Retro Sketch</h1>
-		</div>
+		<div class="grid"></div>
+		<div class="lines"></div>
+		<h1>
+			<span>RETRO</span>
+			<span>RETRO</span>
+		</h1>
+		<h2>Sketch</h2>
+
 		<div id="mainContainer">
 			<div id="navBar">
+				<h3>Controls</h3>
 				<nav>
 					<div id="selectorBttns">
-						<button>color</button>
-						<button>black</button>
-						<button>eraser</button>
-						<button>clear</button>
+						<button class="bttns">Color</button>
+						<button class="bttns">Eraser</button>
+						<button class="bttns">Clear</button>
 					</div>
-					<div id="radioBttns">
-						<input type="radio" name="bttns" />
-						<input type="radio" name="bttns" />
-						<input type="radio" name="bttns" />
-						<input type="radio" name="bttns" />
-						<input type="radio" name="bttns" />
-						<input type="radio" name="bttns" />
-						<input type="radio" name="bttns" />
-						<input type="radio" name="bttns" />
-						<input type="radio" name="bttns" />
-						<input type="radio" name="bttns" />
+					<div class="slidecontainer">
+						<input
+							type="range"
+							min="1"
+							max="100"
+							value="50"
+							class="slider"
+							id="myRange"
+						/>
 					</div>
 				</nav>
 			</div>
