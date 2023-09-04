@@ -9,8 +9,7 @@
 		<script src="./index.js" defer></script>
 	</head>
 	<body>
-		<div class="grid"></div>
-		<div class="lines"></div>
+		
 		<h1>
 			<span>RETRO</span>
 			<span>RETRO</span>
@@ -22,19 +21,27 @@
 				<h3>Controls</h3>
 				<nav>
 					<div id="selectorBttns">
-						<button class="bttns">Color</button>
-						<button class="bttns">Eraser</button>
-						<button class="bttns">Clear</button>
-					</div>
+
+						<div class="colorSelctor">
+						<label for="colors" class="labels">Colors</label>
+						<input class="colorpicker" type="color" id="colors" />
+						</div>
+						<div class="erasorToggle">
+						<label for="toggle" class="labels">Erasor</label>
+						<input class="toggle" type="checkbox" id="toggle"/>
+							</div>
+							<div class="slideController">
+						<label for="slidecontainer" class="labels">Resolution</label>
 					<div class="slidecontainer">
 						<input
 							type="range"
-							min="1"
+							min="50"
 							max="100"
 							value="50"
 							class="slider"
 							id="myRange"
 						/>
+					</div>
 					</div>
 				</nav>
 			</div>
