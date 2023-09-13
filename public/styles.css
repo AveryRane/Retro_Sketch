@@ -93,9 +93,17 @@ nav {
 	width: 95%;
 	height: 45%;
 }
+#submit {
+	text-align: center;
+	font-family: 'Mr Dafoe';
+	width: 25%;
+	border-radius: 2rem;
+	margin-top: 1rem;
+}
 .colorSelctor,
 .erasorToggle,
-.slideController {
+.slideController,
+.submitBttn {
 	display: flex;
 	width: 95%;
 	justify-content: space-around;
@@ -280,4 +288,21 @@ h2 {
 
 .toggle:checked:before {
 	left: 32px;
+}
+
+.rows {
+	display: flex;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-direction: row;
+	flex-basis: auto;
+	border: 1px solid black;
+}
+.columns {
+	display: flex;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-direction: row;
+	flex-basis: auto;
+	border: 1px solid red;
 }
