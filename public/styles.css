@@ -296,6 +296,8 @@ h2 {
 	flex-shrink: 1;
 	flex-direction: row;
 	flex-basis: auto;
+	border-radius: 1px;
+	gap: 1px;
 	border: 1px solid black;
 }
 .columns {
@@ -304,5 +306,7 @@ h2 {
 	flex-shrink: 1;
 	flex-direction: row;
 	flex-basis: auto;
+	border-radius: 1px;
+	gap: 1px;
 	border: 1px solid red;
 }

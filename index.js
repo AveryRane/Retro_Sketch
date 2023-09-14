@@ -29,11 +29,14 @@ submit.addEventListener('click', () => {
 		newRow.classList.add('rows');
 		sketchPad.appendChild(newRow);
 	});
-sketchPad.childNodes.forEach(child => {
-		const newCol = document.createElement('div');
-		newCol.classList.add('columns');
-		child.appendChild(newCol);
+	sketchPad.childNodes.forEach(child => {
+		for (let i = 0; i < rows.length; i++) {
+			const newCol = document.createElement('div');
+			newCol.addEventListener('mouseenter', e => {
+				newCol.style.backgroundColor = 'black';
+			});
+			newCol.classList.add('columns');
+			child.appendChild(newCol);
+		}
 	});
 });
-for (var i = 0; i < rows.length; i++) 
-sketchPad.childNodes[i]); // Note that this does NOT go to the DOM
