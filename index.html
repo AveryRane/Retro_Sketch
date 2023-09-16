@@ -9,31 +9,48 @@
 		<script src="./index.js" defer></script>
 	</head>
 	<body>
-		<h1>Retro Sketch</h1>
+		
+		<h1>
+			<span>RETRO</span>
+			<span>RETRO</span>
+		</h1>
+		<h2>Sketch</h2>
+
 		<div id="mainContainer">
 			<div id="navBar">
+				<h3>Controls</h3>
 				<nav>
 					<div id="selectorBttns">
-						<button>color</button>
-						<button>black</button>
-						<button>eraser</button>
-						<button>clear</button>
+
+						<div class="colorSelctor">
+						<label for="colors" class="labels">Colors</label>
+						<input class="colorpicker" type="color" id="colors" value="#000000" />
+						</div>
+						<div class="erasorToggle">
+						<label for="toggle" class="labels">Erasor</label>
+						<input class="toggle" type="checkbox" id="toggle"/>
+							</div>
+							<div class="slideController">
+						<label for="slidecontainer" class="labels">Resolution</label>
+					<div class="slidecontainer">
+						<input
+							type="range"
+							min="50"
+							max="100"
+							value="50"
+							class="slider"
+							id="myRange"
+						/>
 					</div>
-					<div id="radioBttns">
-						<input type="radio" name="bttns" />
-						<input type="radio" name="bttns" />
-						<input type="radio" name="bttns" />
-						<input type="radio" name="bttns" />
-						<input type="radio" name="bttns" />
-						<input type="radio" name="bttns" />
-						<input type="radio" name="bttns" />
-						<input type="radio" name="bttns" />
-						<input type="radio" name="bttns" />
-						<input type="radio" name="bttns" />
-					</div>
-				</nav>
+				</div>
+			</nav>
 			</div>
 			<div id="sketchPad"></div>
+		</div>
+		<div class="footer">
+		<footer > Copyright 
+			<em> Avery Shepard </em> 
+			2023 </footer>
 		</div>
 	</body>
 </html>
