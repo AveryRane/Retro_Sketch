@@ -73,7 +73,7 @@ h3 {
 	display: flex;
 	flex-direction: column;
 	box-shadow: 0px 0px 51px 8px rgba(0, 0, 0, 0.1);
-	background-color: whitesmoke;
+	background-color: #f5f5f5;
 	height: 33rem;
 	width: 40rem;
 	border-radius: 1rem;
@@ -84,7 +84,7 @@ h3 {
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-items: center;
-	margin-right: 18rem;
+	margin-right: 20rem;
 }
 nav {
 	display: flex;
@@ -93,13 +93,7 @@ nav {
 	width: 95%;
 	height: 45%;
 }
-#submit {
-	text-align: center;
-	font-family: 'Mr Dafoe';
-	width: 25%;
-	border-radius: 2rem;
-	margin-top: 1rem;
-}
+
 .colorSelctor,
 .erasorToggle,
 .slideController,
@@ -118,7 +112,7 @@ nav {
 	height: 20rem;
 	width: 20rem;
 	border-radius: 1rem;
-	margin: 2rem;
+	margin: 0rem;
 	background-color: whitesmoke;
 }
 
@@ -141,7 +135,7 @@ h1 {
 	position: relative;
 	font-family: 'Exo';
 	font-size: 9em;
-	margin-left: 10rem;
+	margin-left: 25rem;
 	margin: 0;
 	transform: skew(-15deg);
 	letter-spacing: 0.03em;
@@ -231,7 +225,7 @@ h2 {
 	border-radius: 2rem;
 	width: 30px; /* Set a specific slider handle width */
 	height: 30px; /* Slider handle height */
-	background: purple; /* Green background */
+	background: #fe05e1; /* Green background */
 	cursor: pointer; /* Cursor on hover */
 }
 
@@ -246,35 +240,35 @@ h2 {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	width: 62px;
-	height: 32px;
+	width: 45px;
+	height: 45px;
 	display: inline-block;
 	position: relative;
-	border-radius: 50px;
+	border-radius: 15px;
 	overflow: hidden;
 	outline: none;
 	border: none;
 	cursor: pointer;
-	background-color: #707070;
+	background-color: #fe05e1;
 	transition: background-color ease 0.3s;
 }
 
 .toggle:before {
-	content: 'on off';
 	display: block;
+	content: ' on off ';
 	position: absolute;
 	z-index: 2;
-	width: 28px;
-	height: 28px;
-	background: #fff;
+	width: 40px;
+	height: 40px;
+	background: #59189a;
 	left: 2px;
 	top: 2px;
-	border-radius: 50%;
+	border-radius: 15px;
 	font: 10px/28px Helvetica;
 	text-transform: uppercase;
 	font-weight: bold;
 	text-indent: -22px;
-	word-spacing: 37px;
+	word-spacing: 20px;
 	color: #fff;
 	text-shadow: -1px -1px rgba(0, 0, 0, 0.15);
 	white-space: nowrap;
@@ -283,7 +277,7 @@ h2 {
 }
 
 .toggle:checked {
-	background-color: purple;
+	background-color: #ff61b0;
 }
 
 .toggle:checked:before {
@@ -297,8 +291,6 @@ h2 {
 	flex-direction: row;
 	flex-basis: auto;
 	border-radius: 1px;
-	gap: 1px;
-	border: 1px solid black;
 }
 .columns {
 	display: flex;
@@ -307,6 +299,17 @@ h2 {
 	flex-direction: row;
 	flex-basis: auto;
 	border-radius: 1px;
-	gap: 1px;
-	border: 1px solid red;
+	border: 1px dotted #fe05e1;
+}
+
+.footer {
+	display: flex;
+
+	font-size: small;
+	align-self: center;
+	justify-content: space-between;
+	width: auto;
+	font-family: sans-serif;
+	text-align: center;
+	color: #f5f5f5;
 }
